@@ -50,3 +50,11 @@ Hi, Gladys. Welcome!
 See https://golang.org/doc/tutorial/handle-errors
 
 Modify greetings/greetings.go.
+
+At the command line in the hello directory, run hello.go
+
+```
+$ go run hello.go
+greetings: empty name
+exit status 1
+```
