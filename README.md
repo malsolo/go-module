@@ -34,3 +34,19 @@ Create hello.go.
 $ go mod init hello
 go: creating new go.mod: module hello
 ```
+
+Add "replace example.com/greetings => ../greetings" in the go.mod and then:
+
+```
+$ go build
+go: found github.com/malsolo/go-module/greetings in github.com/malsolo/go-module/greetings v0.0.0-00010101000000-000000000000
+
+$ ./hello
+Hi, Gladys. Welcome!
+```
+
+## 3. Return and handle an error
+
+See https://golang.org/doc/tutorial/handle-errors
+
+Modify greetings/greetings.go.
