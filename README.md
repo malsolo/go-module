@@ -86,7 +86,7 @@ Modify greetings/greetings.go
 
 Modify hello/hello.go
 
-# 6. Add a test
+## 6. Add a test
 
 See https://golang.org/doc/tutorial/add-a-test
 
@@ -101,4 +101,35 @@ $ go test -v
 PASS
 ok      github.com/malsolo/go-module/greetings  0.012s
 ```
+
+## 7. Compile and install the application
+
+See https://golang.org/doc/tutorial/compile-install
+
+```
+$ cd hello
+
+$ go list -f '{{.Target}}'
+"$GOPATH"/bin/hello
+```
+
+Follow rest of instructions to add the Go install directory to your system's shell path
+or the GOBIN variable using the [go env command](https://golang.org/cmd/go/#hdr-Print_Go_environment_information): ***go env -w GOBIN=/path/to/your/bin***, for instance
+
+```
+$ go env -w GOBIN=$HOME/bin
+```
+
+Run the go install command to compile and install the package:
+
+```
+$ go install
+```
+
+You can execute it by calling the reesult of the command ***go list -f '{{.Target}}'*** or just by calling hello if the previous path is in the PATH environment variable.
+
+See also [How to Write Go Code](https://golang.org/doc/code.html)
+
+Always take a look to [Effective Go](https://golang.org/doc/effective_go.html)
+
 
