@@ -67,6 +67,24 @@ Modify greetings/greetings.go
 
 ```
 $ go build
+
 $ ./hello
-;) 
+Great to see you, Gladys!
+
+$ ./hello
+Hi, Gladys. Welcome!
+
+$ ./hello
+Hail, Gladys! Well met!
 ```
+
+## 5. Return greetings for multiple people
+
+See https://golang.org/doc/tutorial/greetings-multiple-people
+
+Modify greetings/greetings.go 
+
+Modify hello/hello.go
+
+
+
