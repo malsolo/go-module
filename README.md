@@ -58,3 +58,15 @@ $ go run hello.go
 greetings: empty name
 exit status 1
 ```
+
+## 4. Return a random greeting
+
+See https://golang.org/doc/tutorial/random-greeting
+
+Modify greetings/greetings.go
+
+```
+$ go build
+$ ./hello
+;) 
+```
