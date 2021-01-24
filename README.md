@@ -86,5 +86,19 @@ Modify greetings/greetings.go
 
 Modify hello/hello.go
 
+# 6. Add a test
 
+See https://golang.org/doc/tutorial/add-a-test
+
+In the greetings directory, create a file called greetings_test.go.
+
+```
+$ go test -v
+=== RUN   TestHelloName
+--- PASS: TestHelloName (0.00s)
+=== RUN   TestHelloEmpty
+--- PASS: TestHelloEmpty (0.00s)
+PASS
+ok      github.com/malsolo/go-module/greetings  0.012s
+```
 
